@@ -7,13 +7,13 @@ TEMPLATE_DEBUG = True
 #for static files and media files
 STATICFILES_DIRS =(os.path.join(BASE_DIR,'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR,'static-cdn')
-STATIC_URL = 'var/www/litemoney.net/static/'
+STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media-cdn')
 MEDIA_URL = '/media/'
 
 #putting the reqired domain hosting this site
-ALLOWED_HOSTS =['www.LiteMoney.io','*']
+ALLOWED_HOSTS =['*']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
 
 

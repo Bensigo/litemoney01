@@ -7,7 +7,7 @@ TEMPLATE_DEBUG = True
 #for static files and media files
 STATICFILES_DIRS =(os.path.join(BASE_DIR,'static'),)
 STATIC_ROOT = os.path.join(BASE_DIR,'static-cdn')
-STATIC_URL = '/static/'
+STATIC_URL = 'var/www/litemoney.net/static/'
 STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media-cdn')
 MEDIA_URL = '/media/'

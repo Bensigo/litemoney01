@@ -1,0 +1,198 @@
+/*This part handles the navigation section*/
+.nav
+{
+	background-color: #fff;
+	position:fixed;
+	width:100%;
+	top:0;
+}
+
+.nav ul
+{
+
+	padding: 20px;
+}
+
+.nav ul li
+{
+	padding-top: 15px;
+	padding-left: 15px;
+	list-style-type: none;
+	text-transform: uppercase;
+	display: inline;
+}
+
+.nav ul li a
+{
+	color: #333;
+}
+
+.nav ul li img
+{
+
+}
+/*body
+{
+		background-color: #ccc;
+}*/
+/*Navigation styling ends here*/
+
+/*We begin adding style to our jumbotron here*/
+
+.jumbo1
+{
+	background-image: url(lend1.1.jpg);
+	height: 500px;
+	background-size: cover;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.jumbo1:hover
+{
+	background-image: url(lend1.jpg);
+	color: #333;
+	transition: all .5s ease-in;
+}
+
+/*This subsection is for the explanatory jumbotron*/
+.jumbo2
+{
+	background-image: url(easy.jpg);
+	height: 500px;
+	background-size: cover;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.jumbo3
+{
+	background-image: url(secure.jpg);
+	height: 500px;
+	background-size: cover;
+	font-family: sans-serif;
+	color: #fff;
+}
+
+.jumbo4
+{
+	background: url(fast.jpg);
+	height: 500px;
+	background-size: cover;
+	font-family: sans-serif;
+	color: #fff;
+	
+
+}
+.jumbo4:hover{
+	opacity: 0%;
+
+}
+
+.jumbotext
+{
+	font-family:sans-serif;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	font-size: 17px;
+	text-align: center;
+}
+
+.jumbotext h1
+{
+	font-size: 60px;
+	font-family: "elipa ","Alegreya Sans","Open Sans Condensed:300";
+}
+
+.jumbotext1
+{
+	float: right;
+	color: #fff;
+}
+
+.jumbotext1 p
+{
+	font-size: 25px;
+	color: #fff;
+
+}
+
+.jumbotext2
+{
+	float: left;
+}
+.jumbotext2 p
+{
+	font-size: 25px;
+}
+/*Explanatory jumbotron ends*/
+
+/*Jumbotron Button styling starts here*/
+.joinbtn
+{
+	border-radius: 8px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 50px;
+	font-family: 'Alegreya Sans', "sans-serif:300";
+	border-color: white;
+	padding-top:20px;
+}
+
+.joinbtn a {
+	color: #fff;
+  	margin-right: 30px;
+  	padding: 8px 18px;
+  	text-decoration: none;
+  	border: 1px solid #204156;
+
+}
+
+.joinbtn a:hover {
+	color: #333;
+  	position: relative;
+  	bottom: 2px;
+}
+
+.joinbtn:hover
+{
+
+}
+/*Jumbotron button styling ends here*/
+/*Jumbotron Styling ends here*/
+
+.middlethumb
+{
+	text-align: center;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+
+.quicklinks ul li a
+{
+	padding-top: 15px;
+	padding-left: 15px;
+	color: #333;
+	text-decoration: none;
+
+}
+.quicklinks ul li
+{
+	list-style-type: none;
+	display: inline;
+}
+footer{
+	padding-top: 20px;
+	height: 80px;
+/*	background-color: #808080;*/
+	color: #333;
+}
+
+/*Social buttons styling here*/
+.socialbuttons a img
+{
+	height: 25px;
+	width: 25px;
+}
+/*Social buttons styling ends here*/

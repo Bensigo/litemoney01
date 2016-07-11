@@ -1,5 +1,5 @@
 from .settings import *
-import dj_database_urls
+import dj_database_url
 #adding production settings
 DATABASES['default'] = dj_database_url.config()
 DEBUG = False

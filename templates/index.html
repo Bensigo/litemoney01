@@ -2,10 +2,12 @@
 {% load staticfiles %}
 
 {% block title %}
-	Welcome to lightmoney 
+	Welcome to lightmoney
  {% endblock title  %}
 
 {% block content %}
+
+
 <!--This part handles the jumbotron-->
 	<div class="jumbo1">
 	<div class="container">
@@ -14,84 +16,45 @@
 		<p>The most resilent way to handle your finance</p>
 		<div class="joinbtn"><a>JOIN NOW</a>
         </div>
+				<div class="joinbtn"><a> Login </a>
+						</div>
 		</div>
-	</div>	
+	</div>
 	</div>
 <!--The jumbotron handler ends here-->
-
-<!--This section handles the thumbnails after the jumbotron-->
 <br><br>
-<!--The How it works section starts here-->
 
-<!--The thumbnail section starts-->
+<!--This section handles the outliining of features-->
 
-<div class="middlethumb">
-
+<div class="row">
 <div class="container">
-<div class="row">
-<div class="col-xs-12">
-<h2>How It Works</h2>
-<h3>LiteMoney makes it easy to handle funds. It's easy, secure and fast</h3>
-</div>
-</div>
-<div class="row">
-<div class="col-xs-12 col-sm-4">
-<div class="lg-how-work-bg">
-<div class="lg-how-work-img"></div>
-<h3>Deposit</h3>
-Registered user can deposit money online with their debit/credit card.
 
-</div>
-</div>
-<div class="col-xs-12 col-sm-4">
-<div class="lg-how-work-bg">
-<div class="lg-how-work-img pick"></div>
-<h3>Send/Receive </h3>
-LiteMoney users can send money and also receive from other users.
+  	<div class="col-md-4">
+  	<div class="thumb1">
+  		<h2>Wallet</h2>
+  		<p>We store your currency in LMu(liteMoney unit) that you can use to
+				transfer money to user within n ouside the community.user also have LMC(liteMoney credit) that increase your shoping ability</p>
+  	</div>
+  	</div>
 
-</div>
-</div>
-<div class="col-xs-12 col-sm-4">
-<div class="lg-how-work-bg">
-<div class="lg-how-work-img save"></div>
-<h3>Withdraw</h3>
-Users are able to withdraw money directly to their bank account within 24hrs.with a 1% redrawer fee(maximum of &#8358;2000.00) .
-
-</div>
-</div>
-</div>
-</div>
-</div><!--The thumbnail section handler ends-->
+  	<div class="col-md-4">
+  	<div class="thumb2">
+  		<h2>Virtual Currency</h2>
+  		<p>LMu is a digital currency that you,that you can use with the community .</p>
+  	</div>
+  	</div>
 
 
+  	<div class="col-md-4">
+  	  	<div class="thumb3">
+  		<h2>Easy and Fast</h2>
+  		<p>LMu make it easy and fast to share VC(virtual currency) with freinds ,family and bisuness paterns .</p>
+  	</div>
+  	</div>
+</div>
+</div>
 
-<!--The how it works section ends here-->
+<!--The Features outlining section ends here-->
 
-<br><br>
-<!--We are about to expose the use to an indebt scope of LitemOney-->
-<div class="jumbo2">
-	<div class="container">
-		<div class="jumbotext1">
-		<h1>Pay Bills</h1>
-		<p>By signing up to this platform you automatically have the ability to pay bills conveniently. And it is all made easy and secure.</p>
-		</div>
-	</div>
-</div>
-<div class="jumbo3">
-	<div class="container">
-		<div class="jumbotext2">
-		<h1>You get to use our dedicated currency within the system.</h1>
-		<p>When you have successfully registered on the platform you get to buy LM units. which you can transfer to fellow LM users and also used to purchase items from our affilates website.</p>
-		</div>
-	</div>
-</div>
-<div class="jumbo4">
-	<div class="container">
-		<div class="jumbotext1">
-		<h1>Easy & secure channel of transfer within the system</h1>
-		<p>You enjoy the luxury of transfering funds within the system to friends and family with LM account instantly. Transfers are secured.</p>
-		</div>
-	</div>
-</div>
-<!--The explanatory section ends here-->
+
 {% endblock content %}

@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load humanize %}
+{% block title %}  litemoney| {{news_detail.topic}} {% endblock title %}
+{% block content  %}
+	
+			<h1> {{ news_detail.topic }}</h1>
+			<img src="{{ news_detail.image }}"/>
+			<p> {{ news_detail.article }} | <small> by {{ news_detailnews_detail.author }} on {{ news_detail.created_date }} </small></p>
+
+{% endblock content %}

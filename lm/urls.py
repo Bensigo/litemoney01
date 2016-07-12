@@ -20,7 +20,7 @@ from django.conf.urls.static import static
 
 urlpatterns = [
                url(r'^admin/', admin.site.urls),
-               url (r'^blog/',include('Blog.urls')),
+               url (r'^news/',include('News.urls')),
                url(r'^$','lmplatform.views.home',name='home'),
                ]
 if settings.DEBUG:

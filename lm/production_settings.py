@@ -2,7 +2,7 @@ from .settings import *
 import dj_database_url
 #adding production settings
 DATABASES['default'] = dj_database_url.config()
-DEBUG = False
+DEBUG = True
 TEMPLATE_DEBUG = True
 #for static files and media files
 STATICFILES_DIRS =(os.path.join(BASE_DIR,'static'),)

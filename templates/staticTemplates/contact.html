@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+	LiteMoney | Contact-Us {% endblock title %}
+{% block content %}
+<br><br>
+
+<div class="container">
+	<div class="contacthead">
+		<h1>Contact Us</h1>
+	</div>
+</div>
+
+<form method='POST'>
+	{% csrf_token %}
+<div class="container">
+	<div class="contactform">
+	<p>Full Name</p>	
+	<Input type="text" name='name' class="nametext" autocomplete="off" placeholder="Full Name" required  maxlength="50" height="100" size="22">
+	<br>
+	<p>Email</p>
+	<Input type="email" name='email' class="nametext" autocomplete="off" placeholder="Email" required maxlength="60" height="100" size="22">
+	<br>
+	<p>Subject</p>
+	<Input type="text" name='subject' class="nametext" autocomplete="off" placeholder="Subject" required maxlength="300" height="100" size="22">
+	<br>
+	<p>Content</p>
+	<textarea  name='content' class="contactcontent"></textarea>	
+	<p>*Not more than 300 Characters.</p>
+	<br>
+	<Input  class="btn btn-default" type="submit" value="Submit">
+	</div>
+</div>
+</form>
+{% endblock content  %}

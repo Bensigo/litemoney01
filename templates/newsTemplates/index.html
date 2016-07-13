@@ -1,15 +1,18 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
 {% load humanize %}
-{% block title %}  litemoney| News {% endblock title %}
+{% block title %}  litemoney | News {% endblock title %}
 {% block content  %}
 		{% for post in news %}
-		<div class='container'>
-			<h1> <a href="{% url 'news_details' pk=post.pk %}">{{ post.topic }}</a>
-			</h1>
+		<br>
+		<br>
+		<br>
+		<div class="container">
+			<h1 class="newsheadline"><a href="{% url 'news_details' pk=post.pk %}">{{ post.topic }}</a></h1>
 			<p> {{ post.article|truncatewords:30 }} | <small> by {{ post.author }} on {{ post.created_date }} </small></p>
+			<hr>
 		</div>
 		{% endfor %}
 
-	
+	<br><br>
 {% endblock content %}

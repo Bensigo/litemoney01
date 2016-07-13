@@ -38,15 +38,9 @@
 	font-size: 20px;
 	font-family: "Comic Sans MS";
 }
-
-/*body
-{
-		background-color: #ccc;
-}*/
 /*Navigation styling ends here*/
 
 /*Main Jumbotron Styling starts here*/
-
 .jumbo1
 {
 	text-align: center;
@@ -54,17 +48,19 @@
 	height: 500px;
 	background-size: cover;
 	font-family: sans-serif;
-	color: #fff;
+	color: #333;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 .jumbo1 h1 {
-	padding-top: 40px;
+	padding-top: 10px;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
 .jumbo1:hover
 {
 	background-size: cover;
 	background-image: url(img/lend1.jpg);
-	color: #333;
+	color: #fff;
 	transition: all .5s ease-in;
 }
 
@@ -77,8 +73,8 @@
 	text-transform: uppercase;
 	font-size: 50px;
 	font-family: 'Alegreya Sans', "sans-serif:300";
-	padding-top:20px;
-	border-color: #fff
+	padding-top: 20px;
+	border-color: #fff;
 }
 
 .joinbtn a {
@@ -87,7 +83,7 @@
   	padding: 8px 18px;
   	text-decoration: none;
   	border: 1px solid #204156;
-
+  	font-family: 'Alegreya Sans', sans-serif;
 }
 
 .joinbtn a:hover 
@@ -103,95 +99,266 @@
 }
 /*Main Jumbotron styling ends here*/
 
-/*We are about to format the thumbnails*/
-.thumb1
+/*This part handles the middle thumbnails*/
+.middlethumb
 {
 	text-align: center;
+}
+/*The middle thumbnails styling ends here*/
+
+/*This subsection is for the explanatory jumbotron*/
+.jumbo2
+{
+	background-image: url(img/easy.jpg);
+	height: 500px;
 	background-size: cover;
-	background-image: url(img/Photo1.jpg);
-	height: 250px;
+	font-family: sans-serif;
+	color: #333;
+}
+
+.jumbo3
+{
+	background-image: url(img/secure.jpg);
+	height: 500px;
+	background-size: cover;
+	font-family: sans-serif;
 	color: #fff;
 }
 
-.thumb1 p
+.jumbo4
 {
-	padding-top: 10px;
-	font-size: 20px;
-}
-.thumb1 h2{
-	padding-top: 5px;
-}
-
-.thumb2
-{
-	text-align: center;
+	background: url(img/fast.jpg);
+	height: 500px;
 	background-size: cover;
-	background-image: url(img/lmc.png);
-	height: 250px;
-	color: #0000;
-}
-.thumb2 h2{
-	padding-top: 5px;
-}
-
-.thumb2 p
-{
-	padding-top: 10px;
-	font-size: 20px;
-}
-
-.thumb3
-{
-	text-align: center;
-	background-size: cover;
-	background-image: url(img/Hello.jpg);
-	height: 250px;
+	font-family: sans-serif;
 	color: #fff;
 }
-.thumb1 h2{
-	padding-top: 5px;
-	
+.jumbo4:hover{
+	opacity: 0%;
 
-.thumb3 p
+}
+
+.jumbotext
 {
-	padding-top: 10px;
+	font-family:sans-serif;
+	padding-top: 90px;
+	padding-bottom: 50px;
+	font-size: 17px;
+	text-align: center;
+}
+
+.jumbotext h1
+{
+	font-size: 60px;
+	font-family: "elipa ","Alegreya Sans","Open Sans Condensed:300";
+}
+
+.jumbotext1
+{
+	float: right;
+	color: #333;
+}
+
+.jumbotext1 p
+{
+	font-size: 20px;
+	color: #333;
+
+}
+
+.jumbotext2
+{
+	float: left;
+}
+.jumbotext2 p
+{
 	font-size: 20px;
 }
-/*Thumbsnail formatting ends here*/
+.jumbotext3
+{
+	color: #fff;
+	font-size: 20px;
+}
+/*Explanatory jumbotron styling ends here ends*/
 
 .news-section
 {
 	padding-top: 80px;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
-
-.quicklinks ul li a
+/*This part handles the quicklinks in the footer*/
+.quicklinks
 {
 	padding-top: 15px;
-	padding-left: 15px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.quicklinks li a
+{
+	padding-left: 30px;
 	color: #333;
 	text-decoration: none;
+	font-family: 'Alegreya Sans', sans-serif;
 
 }
 
-.quicklinks ul li
+.quicklinks li
 {
 	list-style-type: none;
 	display: inline;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+/*This is where the quicklinks styling ends*/
+
+/*FAQ section styling is here*/
+.faqjumbo
+{
+	background-size: cover;
+	background-image: url(img/FAQ.jpg);
+	height: 500px;
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
+.faqjumbo h1
+{
+	padding-top: 80px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.aboutjumbo
+{
+	background-size: cover;
+	background-image: url(img/About.jpg);
+	height: 500px;
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.qna
+{
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 20px;
+}
+
+.qna
+{
+
+}
+/*FAQ section styling is here*/
+
+/*About Us section styling here*/
+.aboutcontent
+{
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 25px;
+}
+/*About us styling ends here*/
+
+/*News section styling begins here*/
+.newsheadline
+{
+	font-family: cursive;
+	text-transform: uppercase;
+	color: 333;
+}
+
+.newsprev
+{
+	font-size: 30px;
+}
+/*News section styling ends here*/
+
+/*Pricing styling starts here*/
+.platinum-list
+{
+	border: 2px #fff bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: inline;
+	list-style-type: none;
+}
+
+.gold-list
+{
+	border: 2px #fff bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: inline;
+	list-style-type: none;
+}
+
+.silver-list
+{
+	border: 2px #fff bold;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	display: inline;
+	list-style-type: none;
+}
+/*Pricing styling ends here*/
+
+/*Contact us styling here*/
+.contacthead
+{
+	text-transform: uppercase;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.contactform
+{
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.nametext
+{
+	border: 2px bold #ccc;
+	color: #333;
+	font-size: 20px;
+}
+
+.contactform p
+{
+	font-size: 20px;
+}
+
+.contactcontent
+{
+	width: 300px;
+    height: 150px;
+}
+/*Contact Us styling ends here*/
+
+/*Footer section start here*/
 footer
 {
-	bottom: 0;
-	padding-top: 20px;
-	height: 80px;
 /*	background-color: #808080;*/
-	color: #333;
+	height: 80px;
+	background: #fff;
+	box-shadow: 0 1px 6px rgba(0,0,0,0.35);
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+/*Footer styling ends here*/
+
+/*Social buttons styling starts here*/
+.socialbuttons li
+{
+	list-style-type: none;
+	display: inline;
+	font-family: 'Alegreya Sans', sans-serif;
 }
 
-/*Social buttons styling here*/
 .socialbuttons a img
 {
 	height: 25px;
 	width: 25px;
 }
+/*Social buttons styling ends here*/

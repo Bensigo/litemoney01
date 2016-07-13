@@ -22,6 +22,10 @@ urlpatterns = [
                url(r'^admin/', admin.site.urls),
                url (r'^news/',include('News.urls')),
                url(r'^$','lmplatform.views.home',name='home'),
+               url(r'^FQAS/$','staticPages.views.FQAS',name ='FQAS'),
+               url(r'^about/$','staticPages.views.about',name ='about'),
+               url(r'^pricing/$','staticPages.views.pricing',name ='pricing'),
+               url(r'^contact-us/$','staticPages.views.contactUs',name='contactUs'),
                ]
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,document_root = settings.STATIC_ROOT)

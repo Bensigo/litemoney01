@@ -10,7 +10,7 @@
 
 {% block link %}{% endblock link %}
 
-  <link rel="stylesheet" type="text/css" href="{% static 'style.css'%}"/>
+  <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
 <!--Bootstrap and other cdn links starts here-->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext'
                   rel='stylesheet' type='text/css'>
@@ -29,7 +29,7 @@
 <!--Bootstrap and other cdn links ends here-->
 
 <!--Favicon and metadata section starts here-->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
@@ -50,8 +50,8 @@
     </ul>
     <ul class="pull-right">
       <li><a href="#">Wallet</a></li>
-      <li><a href="#">FAQ'S</a></li>
-      <li><a href="#">Pricing</a></li>
+      <li><a href="{% url 'FQAS' %}">FAQ</a></li>
+      <li><a href="{% url 'pricing'%}">Pricing</a></li>
     </ul>
 </div><!-- Header Container ends here-->
 </div><!--Navigation Section Ends Here-->
@@ -62,35 +62,36 @@
 
 
 {% endblock content %}
-<hr>
+
 
 <!--This part of the html page works on the footer-->
 <footer>
+
 <div class="container">
-<div class="pull-left">
-  <div class="quicklinks">
-    <ul>
-      <li>&copy; 2016 LiteMoney Inc.</li>
+  <div class="pull-left">
+    <ul class="quicklinks">
+      <li>&copy; 2016 LiteMoney Inc</li>
+      <li><a href="{% url 'FQAS'%}">FAQ</a></li>
       <li><a href="#">Privacy</a></li>
-      <li><a href="#">FAQ</a></li>
-      <li><a href="{% url 'news_list'%}">News</a></li>
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">About Us</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="{% url 'news_list' %}">News</a></li>
+      <li><a href="{% url 'contactUs' %}">Contact US</a></li>
+      <li><a href="{% url 'about' %}">About</a></li>
     </ul>
   </div>
 </div>
-</div>
 
 <div class="container">
-<div class="pull-right">
-<div class="socialbuttons">
-  <a href="facebook.com/LiteMoneyIO"><img src="{% static 'img/facebook.png'%}"></a>
-  <a href="https://twitter.com/LiteMoneyIO"><img src="{% static 'img/twitter.png' %}"></a>
-  <a href="https://instagram.com/LiteMoneyIO"><img src="{% static 'img/instagram.png'%}"></a>
-  <a href="#"><img src="{% static 'img/nigeria.jpg' %}"></a>
+  <div class="pull-right">
+  <ul class="socialbuttons">
+    <li><a href="#"><img src="{% static 'img/facebook.png' %}"></a></li>
+    <li><a href="twitter.com/LiteMoneyIO"><img src="{% static 'img/twitter.png' %}"></a></li>
+    <li><a href="instagram/LiteMoneyIO"><img src="{% static 'img/instagram.png' %}"></a></li>
+    <li><a href="#"><img src="{% static 'img/nigeria.jpg' %}"></a></li>
+  </ul>
+  </div>
 </div>
-</div>
-</div>
+
 </footer>
 <!--This part of the html page works on the footer-->
 

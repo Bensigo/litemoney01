@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}
+	LiteMoney | Pricing {% endblock title %}
+{% block content %}
+
+<br>
+
+<div class="container">
+	<div class="priceheader">
+		<h3>Our plans are unbeatable.</h3>
+		<p>You can view them below &amp; choose a plan that suits your needs.</p>
+	</div>
+</div>
+
+<hr>
+
+<div class="container">
+	<ul class="platinum-list">
+	<li>
+		<h3>Platinum</h3>
+		<ul class="plan-outline">
+			<li>Get 5&#37; back of all transactions with our affiliates.</li>
+			<li>Transactions are done almost instantaneously.</li>
+			<li>On opening of account you'll be credited with 5 units of LMC.</li>
+		</ul>
+		<p>Cost = &#8358;10,000/ &frac12; a year *Best Value*</p>
+	<a href="#"><div class="btn btn-primary">Buy Platinum</div></a>
+	</li>
+	<li>
+	<div class="pull-right">
+	<img width="320" height="240" src="{% static 'img/platinum.jpg' %}">
+	</div>
+	</li>
+	</ul>
+</div>
+
+<br><br>
+<hr>
+
+<div class="container">
+	<ul class="gold-list">
+	<li>
+		<h3>Gold</h3>
+		<ul class="plan-outline">
+			<li>Get 3&#37; back of all transactions with our affiliates.</li>
+			<li>Transactions are done almost instantaneously.</li>
+			<li>On opening of account you'll be credited with 2.5 units of LMC.</li>
+		</ul>
+		<p>Cost = &#8358;5,000/Monthly</p>
+	<a href="#"><div class="btn btn-primary">Buy Gold</div></a>
+	</li>
+	<li>
+	<div class="pull-right">
+	<img width="320" height="240" src="{% static 'img/gold.jpg' %}">
+	</div>
+	</li>
+	</ul>
+</div>
+
+<br><br>
+<hr>
+
+<div class="container">
+	<ul class="silver-list">
+	<li>
+		<h3>Silver</h3>
+		<ul class="plan-outline">
+			<li>Get 1&#37; back of all transactions with our affiliates.</li>
+			<li>Pay out within 24 hours of confirmation.</li>
+		</ul>
+		<p>Cost = Free</p>
+	</li>
+	<a href="#"><div class="btn btn-primary">Try Silver</div></a>
+	<li>
+	<div class="pull-right">
+	<img width="320" height="240" src="{% static 'img/silver.jpg' %}">
+	</div>
+	</li>
+	</ul>
+</div>
+
+<br><br>
+{% endblock content  %}

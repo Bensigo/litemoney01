@@ -1,0 +1,11 @@
+Contact Name:
+{{ contact_name | striptags }}
+
+subject:
+{{ contact_title | striptags }}
+
+conntact_email:
+{{ contact_email | striptags }}
+
+content:
+{{ contact_mail | striptags }}

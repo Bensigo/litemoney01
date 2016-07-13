@@ -1,5 +1,6 @@
 from django.shortcuts import render,get_object_or_404
 from .models import  News
+
 # Create your views here.
 
 def news_list(request):
@@ -16,4 +17,10 @@ def news_details(request,pk):
 	template = 'newsTemplates/news_details.html'
 	context = {'news_detail':news_detail}
 	return render (request,template,context)
+
+
+
+		
+
+
 

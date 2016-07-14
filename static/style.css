@@ -86,9 +86,9 @@
 	border-color: #fff;
 }
 
-.joinbtn a {
+.joinbtn a 
+{
 	color: #fff;
-  	margin-right: 30px;
   	padding: 8px 18px;
   	text-decoration: none;
   	border: 1px solid #204156;

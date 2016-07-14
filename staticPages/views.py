@@ -1,9 +1,9 @@
-from django.shortcuts import render,redirect
+from django.shortcuts import render
 from django.http import HttpResponse
 from staticPages.forms import Contact
 from django.template.loader import get_template
 from django.template import context
-from django.core.mail import send_mail,BadHeaderError
+from django.core.mail import EmailMessage,BadHeaderError
 
 
 
@@ -26,16 +26,37 @@ def pricing(request):
 
 def contactUs(request):
 	#render the contact us page and send email to comapny
- 	contact_email = request.POST.get('email','')
- 	contact_title = request.POST.get('subject','')
- 	contact_mail = request.POST.get('content','')
- 	contact_name = request.POST.get('name','')
- 	if contact_name and contact_email and contact_mail and contact_title:
- 		try:
- 			send_mail(contact_title,contact_name,contact_mail,contact_email,['info@litemoney.net'])
- 		except BadHeaderError:
- 				HttpResponse("invalid header found ")
- 		return redirect('contact')
+ 	form = Contact()
+ 	if request.method == "POST":
+ 		if form.is_valid():
+ 			contact_email = request.POST.get('email','')
+ 			contact_title = request.POST.get('subject','')
+ 			contact_mail = request.POST.get('content','')
+ 			contact_name = request.POST.get('name','')
+
+ 			template = get_template('contact_template')
+ 			context =({
+ 				'contact_name':contact_name,
+ 				'contact_title':contact_title,
+ 				'contact_email':contact_email,
+ 				'contact_mail':contact_mail,
+ 				})
+ 			content = template.render(context)
+ 			email = EmailMessage(
+ 				'new contact form submission',
+ 				content,
+ 				'your comapny liteMoney',
+ 				['info@litemoney.net'],
+ 				headers = {'Reply-To':contact_email}
+ 				)
+ 			email.send()
+ 			return redirect('contact')
+ 		else:#if form is not valid
+ 			template = 'staticTemplates/contact.html'
+ 			return render (request,template)
+ 		    
 
  	else:
- 		HttpResponse('make sure all field enter is valid ')
+
+ 		template = 'staticTemplates/contact.html'
+ 		return render (request,template)

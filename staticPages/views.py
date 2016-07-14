@@ -26,10 +26,10 @@ def pricing(request):
 
 def contactUs(request):
 	#render the contact us page and send email to comapny
- 	contact_email = request.POST.get('email',")
- 	contact_title = request.POST.get('subject',")
- 	contact_mail = request.POST.get('content',")
- 	contact_name = request.POST.get('name',")
+ 	contact_email = request.POST.get('email','')
+ 	contact_title = request.POST.get('subject','')
+ 	contact_mail = request.POST.get('content','')
+ 	contact_name = request.POST.get('name','')
  	if contact_name and contact_email and contact_mail and contact_title:
  		try:
  			send_mail(contact_title,contact_name,contact_mail,contact_email,['info@litemoney.net'])

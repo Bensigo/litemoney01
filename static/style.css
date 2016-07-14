@@ -1,7 +1,6 @@
 /*This part handles the navigation section*/
 .nav
 {
-	height:60px;
 	background:#fff;
 	box-shadow:0 1px 6px rgba(0,0,0,0.35);
 	left:0;
@@ -11,32 +10,42 @@
 	z-index:100;
 }
 
-.nav ul
+/*.nav ul
 {
 
 	padding: 20px;
-}
+}*/
 
-.nav ul li
+.header-links
 {
-	padding-top: 15px;
-	padding-left: 15px;
 	list-style-type: none;
 	text-transform: uppercase;
 	display: inline;
-}
-
-.nav ul li a
-{
 	color: #333;
 	font-size: 20px;
-	font-family: "Trebuchet MS";
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.header-links li
+{
+	float: right;
+	display: inline;
+	padding-top: 15px;
+	padding-left: 15px;
+	color: #333;
+}
+
+.header-links li a
+{
+	color: #333;
 }
 
 .header-logo
 {
-	font-size: 20px;
-	font-family: "Comic Sans MS";
+	font-size: 30px;
+	font-family: 'Alegreya Sans', sans-serif;
+	list-style-type: none;
+	color: #333;
 }
 /*Navigation styling ends here*/
 
@@ -109,11 +118,11 @@
 /*This subsection is for the explanatory jumbotron*/
 .jumbo2
 {
-	background-image: url(img/easy.jpg);
+	background-image: url(img/Hello.jpg);
 	height: 500px;
 	background-size: cover;
 	font-family: sans-serif;
-	color: #333;
+	color: #fff;
 }
 
 .jumbo3
@@ -156,13 +165,13 @@
 .jumbotext1
 {
 	float: right;
-	color: #333;
+	color: #fff;
 }
 
 .jumbotext1 p
 {
 	font-size: 20px;
-	color: #333;
+	color: #fff;
 
 }
 
@@ -234,6 +243,17 @@
 	height: 500px;
 	text-align: center;
 	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.aboutexp
+{
+	text-align: center;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.aboutexp p
+{
+	font-size: 20px;
 }
 
 .qna
@@ -339,7 +359,6 @@
 footer
 {
 /*	background-color: #808080;*/
-	height: 80px;
 	background: #fff;
 	box-shadow: 0 1px 6px rgba(0,0,0,0.35);
 	left: 0;

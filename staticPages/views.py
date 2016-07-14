@@ -35,9 +35,9 @@ def contactUs(request):
  			contact_mail = request.POST.get('content','')
  			contact_name = request.POST.get('name','')
  			message = """
- 					from {}\n {} \nvia {}
+ 					from %s \n %s \n via %s
 
- 			""".(contact_name,contact_mail,contact_email)
+ 			"""%(contact_name,contact_mail,contact_email)
  			#send the email
  			send_mail(contact_title,contact_mail,contact_email,['info@litemoney.net'],fail_silently=True)
  			return redirect('contact')

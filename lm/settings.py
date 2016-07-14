@@ -130,10 +130,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media-cdn')
 MEDIA_URL = '/media/'
 
 #settings for emails
-EMAIL_BACKEND = 'django.core.mail.backends.console.email'
-EMAIL_HOST ='smtp.gmail.com'
-EMAIL_HOST_PASSWORD ='84A8E46E3C'
-EMAIL_HOST_USER ='info@litemoney.net'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_PASSWORD ='98bm08$@24'
+EMAIL_HOST_USER ='sigocode@gmail.com'
 EMAIL_USE_TLS = True
-EMAIL_PORT = 587
+EMAIL_PORT = 465
 

@@ -17,6 +17,7 @@ from django.conf.urls import url,include
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from django.conf.urls import handler404,handler500
 
 urlpatterns = [
                url(r'^admin/', admin.site.urls),
@@ -26,6 +27,7 @@ urlpatterns = [
                url(r'^about/$','staticPages.views.about',name ='about'),
                url(r'^pricing/$','staticPages.views.pricing',name ='pricing'),
                url(r'^contact-us/$','staticPages.views.contactUs',name='contactUs'),
+               url(r'^contact-complete/$','staticPages.views.contactComplete',name ='contactComplete'),
                ]
 handler404 = 'News.views.error404'
 handler500 = 'News.views.error500'

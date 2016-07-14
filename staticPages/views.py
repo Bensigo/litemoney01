@@ -3,7 +3,7 @@ from django.http import HttpResponse
 from staticPages.forms import Contact
 from django.template.loader import get_template
 from django.template import context
-from django.core.mail import EmailMessage,BadHeaderError
+from django.core.mail import send_mail,BadHeaderError
 
 
 
@@ -29,27 +29,17 @@ def contactUs(request):
  	form = Contact()
  	if request.method == "POST":
  		if form.is_valid():
+ 			#getting ithe vale form the form
  			contact_email = request.POST.get('email','')
  			contact_title = request.POST.get('subject','')
  			contact_mail = request.POST.get('content','')
  			contact_name = request.POST.get('name','')
+ 			message = """
+ 					from {}\n {} \nvia {}
 
- 			template = get_template('contact_template')
- 			context =({
- 				'contact_name':contact_name,
- 				'contact_title':contact_title,
- 				'contact_email':contact_email,
- 				'contact_mail':contact_mail,
- 				})
- 			content = template.render(context)
- 			email = EmailMessage(
- 				'new contact form submission',
- 				content,
- 				'your comapny liteMoney',
- 				['info@litemoney.net'],
- 				headers = {'Reply-To':contact_email}
- 				)
- 			email.send()
+ 			""".(contact_name,contact_mail,contact_email)
+ 			#send the email
+ 			send_mail(contact_title,contact_mail,contact_email,['info@litemoney.net'],fail_silently=True)
  			return redirect('contact')
  		else:#if form is not valid
  			template = 'staticTemplates/contact.html'

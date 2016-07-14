@@ -134,6 +134,6 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.email'
 EMAIL_HOST ='smtp.gmail.com'
 EMAIL_HOST_PASSWORD ='84A8E46E3C'
 EMAIL_HOST_USER ='info@litemoney.net'
-EMAIL_USE_TLS = 1
+EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 

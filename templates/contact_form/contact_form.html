@@ -16,16 +16,13 @@ Contact-Us | Litemoney {% endblock title %}
 <div class="container">
 	<div class="contactform">
 	<p>Full Name</p>	
-	<Input type="text" class="nametext" autocomplete="off" placeholder="Full Name" required  maxlength="50" height="100" size="22">
+	<Input name='name' type="text" class="nametext" autocomplete="off" placeholder="Full Name" required  maxlength="50" height="100" size="22">
 	<br>
 	<p>Email</p>
-	<Input type="email" class="nametext" autocomplete="off" placeholder="Email" required maxlength="60" height="100" size="22">
-	<br>
-	<p>Subject</p>
-	<Input type="text" class="nametext" autocomplete="off" placeholder="Subject" required maxlength="300" height="100" size="22">
+	<Input name='email' type="email" class="nametext" autocomplete="off" placeholder="Email" required maxlength="60" height="100" size="22">
 	<br>
 	<p>Content</p>
-	<textarea class="contactcontent"></textarea>	
+	<textarea name='body' class="contactcontent"></textarea>	
 	<p>*Not more than 300 Characters.</p>
 	<br>
 	<Input  class="btn btn-default" type="submit" value="Submit">

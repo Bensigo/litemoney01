@@ -4,21 +4,23 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 # Create your views here.
 
-def news_list(request):
-	#diplay all the news in the page
-	template = 'newsTemplates/index.html'
+
+def listing (request):
 	news_list = News.objects.all().order_by('-pk')
-	paginator = Paginator(contact_list, 10) # Show 10 news per page
+	paginator = paginator(news_list,10)#show ten news per page
 	page = request.GET.get('page')
 	try:
-		news = paginator.page(page)
+		news = pagiator.page(page)
 	except PageNotAnInteger:
-        # If page is not an integer, deliver first page ...
-        news = paginator.page(1)
-    except EmptyPage:
-    	news = paginator.page(paginator.num_pages)
-    context = {'news':news}
-	return render (request,template,context)
+		#if page not an interger,diviver firs page
+		news = paginator.page(1)
+	except EmptyPage:
+		news = paginator.page(paginator.num_pages)
+	context = {'news':news}
+	template = 'newsTemplates/index.html'
+	return render(request,template,context)
+
+
 
 
 def news_details(request,pk):

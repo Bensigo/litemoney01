@@ -16,8 +16,7 @@ def news_list(request):
         # If page is not an integer, deliver first page.
         news = paginator.page(1)
     except EmptyPage:
-        # If page is out of range (e.g. 9999), deliver last page of results.
-        news = paginator.page(paginator.num_pages)
+    	news = paginator.page(paginator.num_pages)
     context = {'news':news}
 	return render (request,template,context)
 

@@ -26,7 +26,7 @@ urlpatterns = [
                url(r'^FQAS/$','staticPages.views.FQAS',name ='FQAS'),
                url(r'^about/$','staticPages.views.about',name ='about'),
                url(r'^pricing/$','staticPages.views.pricing',name ='pricing'),
-               url(r'^contact/', include('contact_form.urls')),
+               url(r'^contact/', include('contact_form.urls'), name ='contact'),
                ]
 handler404 = 'News.views.error404'
 handler500 = 'News.views.error500'

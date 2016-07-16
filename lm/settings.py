@@ -138,7 +138,7 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_PASSWORD ='98bm08$@24'
 EMAIL_HOST_USER ='sigocode@gmail.com' #use for trying
 EMAIL_USE_TLS = True
-EMAIL_PORT = 465
+EMAIL_PORT = 587
 
 ADMINS = (
     ('Larry Sigo', 'sigocode@gmail.com'),   # email will be sent to your_email

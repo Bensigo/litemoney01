@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.humanize',
     'News',
     'lmplatform',
+    #third party app
+    'contact_form',
 
 ]
 
@@ -131,8 +133,14 @@ MEDIA_URL = '/media/'
 
 #settings for emails
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD ='98bm08$@24'
-EMAIL_HOST_USER ='sigocode@gmail.com'
+EMAIL_HOST_PASSWORD =os.environ['98bm08$@24']
+EMAIL_HOST_USER ='sigocode@gmail.com' #use for trying
 EMAIL_USE_TLS = True
 EMAIL_PORT = 465
+
+ADMINS = (
+    ('your_name', 'sigocode@gmail.com'),   # email will be sent to your_email
+)
+
+MANAGERS = ADMINS
 

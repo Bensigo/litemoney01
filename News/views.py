@@ -6,7 +6,7 @@ from .models import  News
 def news_list(request):
 	#diplay all the news in the page
 	template = 'newsTemplates/index.html'
-	news = News.objects.all().order_by('pk')
+	news = News.objects.all().order_by('-pk')
 	context = {'news':news}
 	return render (request,template,context)
 

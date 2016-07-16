@@ -30,11 +30,6 @@ def news_details(request,pk):
 	context = {'news_detail':news_detail}
 	return render (request,template,context)
 
-def error404(request):
-	return render (request,'404.html')
-
-def error500(request):
-	return render (request,'500.html')
 
 
 

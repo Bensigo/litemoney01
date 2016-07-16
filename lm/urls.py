@@ -28,8 +28,7 @@ urlpatterns = [
                url(r'^pricing/$','staticPages.views.pricing',name ='pricing'),
                url(r'^contact/', include('contact_form.urls')),
                ]
-handler404 = 'News.views.error404'
-handler500 = 'News.views.error500'
+
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL,document_root = settings.STATIC_ROOT)
     urlpatterns += static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

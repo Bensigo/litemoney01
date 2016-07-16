@@ -2,7 +2,7 @@ from .settings import *
 import dj_database_url
 #adding production settings
 DATABASES['default'] = dj_database_url.config()
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = True
 #for static files and media files
 STATICFILES_DIRS =(os.path.join(BASE_DIR,'static'),)
@@ -13,7 +13,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media-cdn')
 MEDIA_URL = '/media/'
 
 #putting the reqired domain hosting this site
-ALLOWED_HOSTS =['*']
+ALLOWED_HOSTS =['www.litemoney.net','litemoney.net']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
 
 

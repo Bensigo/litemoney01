@@ -9,9 +9,11 @@
 	<div class="container">
 			<h1 class="newsheadline"> {{ news_detail.topic }}</h1>
 			<br>
-			<img width="400" height="240" class="newspic" src="{{ news_detail.image }}"/>
+			{% if news_detail.image %}
+			<img width="400" height="240" class="newspic" src="{{ news_detail.image.url }}"/>
+			{% endif %}
 			<br>
-			<p class="newsprev"> {{ news_detail.article }} | <small> by {{ news_detailnews_detail.author }} on {{ news_detail.created_date }} </small></p>
+			<p class="newsprev"> {{ news_detail.article }} | <small> by {{ news_detail.author }} on {{ news_detail.created_date }} </small></p>
 			<a href="{% url 'news_list'%}"><div class="btn btn-primary">Back</div></a>
 	</div>
 <br><br>

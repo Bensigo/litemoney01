@@ -7,10 +7,10 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 
 def listing (request):
 	news_list = News.objects.all().order_by('-pk')
-	paginator = paginator(news_list,10)#show ten news per page
+	paginator = Paginator(news_list,10)#show ten news per page
 	page = request.GET.get('page')
 	try:
-		news = pagiator.page(page)
+		news = paginator.page(page)
 	except PageNotAnInteger:
 		#if page not an interger,diviver firs page
 		news = paginator.page(1)

@@ -13,7 +13,7 @@ def news_list(request):
 	try:
 		news = paginator.page(page)
 	except PageNotAnInteger:
-        # If page is not an integer, deliver first page.
+        # If page is not an integer, deliver first page ...
         news = paginator.page(1)
     except EmptyPage:
     	news = paginator.page(paginator.num_pages)

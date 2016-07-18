@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'lmplatform',
     #third party app
     'contact_form',
+    'registration',
 
 ]
 SITE_ID = 1
@@ -135,14 +136,19 @@ MEDIA_URL = '/media/'
 
 #settings for emails
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_PASSWORD ='98bm08$@24'
-EMAIL_HOST_USER ='sigocode@gmail.com' #use for trying
+EMAIL_HOST_PASSWORD ='twinkletoes34'
+EMAIL_HOST_USER ='info@litemoney.net' #use for trying
 EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 
 ADMINS = (
-    ('Larry Sigo', 'sigocode@gmail.com'),   # email will be sent to your_email
+    ('Larry Sigo', 'sigo@litemoney.net'),   # email will be sent to your_email
 )
 
 MANAGERS = ADMINS
+
+
+#django-registration settingins
+ACCOUNT_ACTIVATION_DAYS = 1
+
 

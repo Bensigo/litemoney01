@@ -17,7 +17,7 @@ def listing (request):
 	except EmptyPage:
 		news = paginator.page(paginator.num_pages)
 	context = {'news':news}
-	template = 'newsTemplates/index.html'
+	template = 'newsTemplates/news_listing.html'
 	return render(request,template,context)
 
 

@@ -50,10 +50,10 @@
     </ul>
     <ul class="pull-right">
     <div class="header-links">
-      <li><a href="#">Sign Up</a></li>
-      <li><a href="#">Log In</a></li>
+      <li><a href="{% url 'registration_register'%}">Sign Up</a></li>
+      <li><a href="{% url 'auth_login'%}">Log In</a></li>
       <li><a href="#">Wallet</a></li>
-      <li><a href="{% url 'FQAS' %}">FAQ</a></li>
+      <li><a href="{% url 'FQAs' %}">FAQs</a></li>
       <li><a href="{% url 'pricing'%}">Pricing</a></li>
     </div>
     </ul>
@@ -75,7 +75,7 @@
   <div class="pull-left">
     <ul class="quicklinks">
       <li>&copy; 2016 LiteMoney Inc</li>
-      <li><a href="{% url 'FQAS'%}">FAQ</a></li>
+      <li><a href="{% url 'FQAs'%}">FAQ</a></li>
       <li><a href="#">Privacy</a></li>
       <li><a href="#">Terms of Use</a></li>
       <li><a href="{% url 'news_list' %}">News</a></li>

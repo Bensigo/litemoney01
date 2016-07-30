@@ -13,7 +13,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR,'media-cdn')
 MEDIA_URL = '/media/'
 
 #putting the reqired domain hosting this site
-ALLOWED_HOSTS =['www.litemoney.net','litemoney.net']
+ALLOWED_HOSTS =['www.litemoney.net','litemoney.net','*.litemoney.net']
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO','https')
 
 

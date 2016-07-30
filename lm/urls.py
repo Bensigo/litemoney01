@@ -18,8 +18,6 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import handler404,handler500
-from django.contrib.auth.views import (password_reset, password_reset_done,
-                                      password_reset_confirm,password_reset_complete)
 
 
 
@@ -29,14 +27,8 @@ urlpatterns = [
                url(r'^$','lmplatform.views.home',name='home'),
                url(r'^FQAs/$','staticPages.views.FQAS',name ='FQAs'),
                url(r'^about/$','staticPages.views.about',name ='about'),
-               url(r'^pricing/$','staticPages.views.pricing',name ='pricing'),
                url(r'^contact/', include('contact_form.urls')),
-               url(r'^accounts/', include('registration.backends.simple.urls')),
-               url(r'^accounts/password/reset/(?P<uidb64>[0-9A-Za-z]+)-(?P<token>.+)/$', password_reset_confirm,{'template_name':'registration/password_reset_confirm.html'},name="password_reset_confirm"),
-               url(r'^accounts/password/done/$', password_reset_complete,{'template_name':'registration/password_reset_complete.html'},name="password_reset_complete"),
-               url(r'^accounts/password/reset/$', password_reset,{'template_name':'registration/password_reset_form.html'},name="password_reset"),
-               url(r'^accounts/password/reset/done/$',password_reset_done,{'template_name':'registration/password_reset_done.html'},name="password_reset_done"),
-
+               
                ]
 
 if settings.DEBUG:

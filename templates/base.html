@@ -1,6 +1,6 @@
 {% load staticfiles %}
 <!DOCTYPE html>
-<html>
+<html class="fsvs" lang="en">
 <head>
 <!--Site & color scheme all done by Musa Farouk Ikhade 08140719844 musaikhade@outlook.com -->
   <title>
@@ -11,6 +11,7 @@
 {% block link %}{% endblock link %}
 
   <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}"/>
+ 
 <!--Bootstrap and other cdn links starts here-->
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,latin-ext'
                   rel='stylesheet' type='text/css'>
@@ -26,6 +27,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <!-- Latest compiled and minified JavaScript -->
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300italic|Lato:400,300italic|Felipa|Alegreya+Sans:100,400,900italic|Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+   <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 <!--Bootstrap and other cdn links ends here-->
 
 <!--Favicon and metadata section starts here-->
@@ -38,6 +40,14 @@
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--Favicon and metadata section ends here-->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="{% static 'js/jquery.betterScroll.js' %}" type="text/javascript"></script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+    $('#demo').betterScroll();
+  });
+  </script>
 </head>
 <body>
 
@@ -46,15 +56,12 @@
 <div class="nav">
 <div class="container"><!--Header Container starts here-->
     <ul class="pull-left">
-      <li class="header-logo"><a href="{% url 'home' %}">LITEMONEY</a></li>
+      <div class="header-logo"><a href="{% url 'home' %}"><img height="50px" src="{%static 'img/hlogo.png' %}"></a></div>
     </ul>
     <ul class="pull-right">
     <div class="header-links">
-      <li><a href="{% url 'registration_register'%}">Sign Up</a></li>
-      <li><a href="{% url 'auth_login'%}">Log In</a></li>
-      <li><a href="#">Wallet</a></li>
-      <li><a href="{% url 'FQAs' %}">FAQs</a></li>
-      <li><a href="{% url 'pricing'%}">Pricing</a></li>
+      <li><a href="{% url 'FQAs' %}">FAQ</a></li>
+      <li><a href="#"><button id="allbtnnav">Coming Soon</button></a></li>
     </div>
     </ul>
 </div><!-- Header Container ends here-->
@@ -74,7 +81,9 @@
 <div class="container">
   <div class="pull-left">
     <ul class="quicklinks">
-      <li>&copy; 2016 LiteMoney Inc</li>
+      <li><p>&copy; 2016 LiteMoney Inc</p><li>
+      <li><a href="#">Creators</a></li>
+      <li><a href="#">Affiliates</a></li>
       <li><a href="{% url 'FQAs'%}">FAQ</a></li>
       <li><a href="#">Privacy</a></li>
       <li><a href="#">Terms of Use</a></li>

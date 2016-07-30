@@ -150,5 +150,6 @@ MANAGERS = ADMINS
 
 #django-registration settingins
 ACCOUNT_ACTIVATION_DAYS = 1
+LOGIN_REDIRECT_URL = "profile"
 
 

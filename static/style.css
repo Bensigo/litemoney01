@@ -1,13 +1,14 @@
 /*This part handles the navigation section*/
 .nav
 {
-	background:#fff;
+	background: #fff;
 	box-shadow:0 1px 6px rgba(0,0,0,0.35);
 	left:0;
 	position:fixed;
 	top:0;
 	width:100%;
 	z-index:100;
+	opacity: 0.8;
 }
 
 /*.nav ul
@@ -16,6 +17,11 @@
 	padding: 20px;
 }*/
 
+.motto
+{
+	color: #333;
+}
+
 .header-links
 {
 	list-style-type: none;
@@ -23,131 +29,175 @@
 	display: inline;
 	color: #333;
 	font-size: 20px;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .header-links li
 {
 	float: right;
 	display: inline;
-	padding-top: 15px;
-	padding-left: 15px;
+	padding: 10px;
 	color: #333;
 }
 
 .header-links li a
 {
 	color: #333;
+	text-decoration: none;
 }
 
 .header-logo
 {
 	font-size: 30px;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	list-style-type: none;
 	color: #333;
 }
+
+.header-logo a
+{
+	color: #fff;
+	text-decoration: none;
+}
+
+.header-logo a:hover
+{
+	text-decoration: none;
+	color: #fff;
+}
+
 /*Navigation styling ends here*/
 
 /*Main Jumbotron Styling starts here*/
-.jumbo1
+.jumbotron{
+	background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+#jumbo1
 {
 	text-align: center;
-	background-image: url(img/lend1.1.jpg);
-	height: 500px;
-	background-size: cover;
+	background-image: url(img/Photo3.jpg) ;
 	font-family: sans-serif;
 	color: #333;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Harmattan', sans-serif;
+	max-width: 100%; 
+    height: auto;
+    height: 600px;
+    /*font-size: 16px;*/
+    font-size: 4vw;
+    max-width: 100%;
 }
-.jumbo1 h1 {
+#jumbo1 h1
+{
 	padding-top: 10px;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Harmattan', sans-serif;
+	font-size: 4vw;
 }
 
-.jumbo1:hover
+#jumbo p
+{
+	font-size: calc(3vw + 3vh);
+}
+/*#jumbo1:hover
 {
 	background-size: cover;
-	background-image: url(img/lend1.jpg);
+	background-image: url(img/lend1.jpg) ;
 	color: #fff;
 	transition: all .5s ease-in;
-}
+}*/
 
-.joinbtn
+.getapp
 {
 	border-radius: 8px;
-	border: 2px bold #fff;
+	border: 2px bold #AA0C0C;
 	color: #fff;
-	text-align: center;
 	text-transform: uppercase;
-	font-size: 50px;
-	font-family: 'Alegreya Sans', "sans-serif:300";
+	font-size: 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
 	padding-top: 20px;
-	border-color: #fff;
+	border-color: #AA0C0C
 }
 
-.joinbtn a 
+.getapp a 
 {
 	color: #fff;
   	padding: 8px 18px;
   	text-decoration: none;
-  	border: 1px solid #204156;
-  	font-family: 'Alegreya Sans', sans-serif;
+  	border: 1px solid #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.joinbtn a:hover 
+.getapp a:hover 
 {
-	color: #333;
+	text-decoration: none;
+	color: #fff;
   	position: relative;
   	bottom: 2px;
-}
-
-.joinbtn:hover
-{
-
+  	font-family: 'Open Sans Condensed', sans-serif;
 }
 /*Main Jumbotron styling ends here*/
+
+.ourquote
+{
+	text-align: center;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+	font-style: italic;
+	color: #333;
+}
 
 /*This part handles the middle thumbnails*/
 .middlethumb
 {
+	color: #fff;
 	text-align: center;
+	font-size: 20px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.lg-how-work-bg h3
+{
+	color: #333;
+}
+
+.lg-how-work-bg p
+{
+	color: #333;
 }
 /*The middle thumbnails styling ends here*/
 
 /*This subsection is for the explanatory jumbotron*/
-.jumbo2
+#jumbo2
 {
-	background-image: url(img/Hello.jpg);
+	background-image: url(img/Hello.jpg) ;
 	height: 500px;
-	background-size: cover;
 	font-family: sans-serif;
 	color: #fff;
 }
 
-.jumbo3
+#jumbo3
 {
-	background-image: url(img/secure.jpg);
+	background-image: url(img/secure.jpg) ;
 	height: 500px;
-	background-size: cover;
 	font-family: sans-serif;
 	color: #fff;
 }
 
-.jumbo4
+#jumbo4
 {
-	background: url(img/fast.jpg);
+	background-image: url(img/fast.jpg)  ;
 	height: 500px;
-	background-size: cover;
 	font-family: sans-serif;
 	color: #fff;
 }
-.jumbo4:hover{
+#jumbo4:hover{
 	opacity: 0%;
 
 }
 
-.jumbotext
+#jumbotext
 {
 	font-family:sans-serif;
 	padding-top: 90px;
@@ -156,26 +206,26 @@
 	text-align: center;
 }
 
-.jumbotext h1
+#jumbotext h1
 {
 	font-size: 60px;
-	font-family: "elipa ","Alegreya Sans","Open Sans Condensed:300";
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-.jumbotext1
+#jumbotext1
 {
 	float: right;
 	color: #fff;
 }
 
-.jumbotext1 p
+#jumbotext1 p
 {
 	font-size: 20px;
 	color: #fff;
 
 }
 
-.jumbotext2
+#jumbotext2
 {
 	float: left;
 }
@@ -183,7 +233,7 @@
 {
 	font-size: 20px;
 }
-.jumbotext3
+#jumbotext3
 {
 	color: #fff;
 	font-size: 20px;
@@ -193,14 +243,14 @@
 .news-section
 {
 	padding-top: 80px;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /*This part handles the quicklinks in the footer*/
 .quicklinks
 {
 	padding-top: 15px;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .quicklinks li a
@@ -208,47 +258,54 @@
 	padding-left: 30px;
 	color: #333;
 	text-decoration: none;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 
 }
 
 .quicklinks li
 {
 	list-style-type: none;
-	display: inline;
-	font-family: 'Alegreya Sans', sans-serif;
+	display: inline-block;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 /*This is where the quicklinks styling ends*/
 
 /*FAQ section styling is here*/
 .faqjumbo
 {
-	background-size: cover;
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 	background-image: url(img/FAQ.jpg);
 	height: 500px;
 	text-align: center;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .faqjumbo h1
 {
 	padding-top: 80px;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .aboutjumbo
 {
-	background-size: cover;
-	background-image: url(img/About.jpg);
+	
+	background-image: url(img/About.jpg) ;
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
 	height: 500px;
 	text-align: center;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .aboutexp
 {
 	text-align: center;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .aboutexp p
@@ -259,21 +316,17 @@
 .qna
 {
 	text-align: center;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 20px;
 }
 
-.qna
-{
-
-}
 /*FAQ section styling is here*/
 
 /*About Us section styling here*/
 .aboutcontent
 {
 	text-align: center;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 	font-size: 25px;
 }
 /*About us styling ends here*/
@@ -283,7 +336,7 @@
 {
 	font-family: cursive;
 	text-transform: uppercase;
-	color: 333;
+	color: #fff;
 }
 
 .newsprev
@@ -292,54 +345,22 @@
 }
 /*News section styling ends here*/
 
-/*Pricing styling starts here*/
-.platinum-list
-{
-	border: 2px #fff bold;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	display: inline;
-	list-style-type: none;
-}
-
-.gold-list
-{
-	border: 2px #fff bold;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	display: inline;
-	list-style-type: none;
-}
-
-.silver-list
-{
-	border: 2px #fff bold;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 10px;
-	display: inline;
-	list-style-type: none;
-}
-/*Pricing styling ends here*/
-
 /*Contact us styling here*/
 .contacthead
 {
 	text-transform: uppercase;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .contactform
 {
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .nametext
 {
 	border: 2px bold #ccc;
-	color: #333;
+	color: #fff;
 	font-size: 20px;
 }
 
@@ -361,18 +382,21 @@ footer
 /*	background-color: #808080;*/
 	background: #fff;
 	box-shadow: 0 1px 6px rgba(0,0,0,0.35);
-	left: 0;
 	width: 100%;
 	z-index: 100;
+	bottom: 0;
+	position: fixed;
+	opacity: 0.8;
 }
 /*Footer styling ends here*/
 
 /*Social buttons styling starts here*/
+
 .socialbuttons li
 {
 	list-style-type: none;
 	display: inline;
-	font-family: 'Alegreya Sans', sans-serif;
+	font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .socialbuttons a img
@@ -381,3 +405,171 @@ footer
 	width: 25px;
 }
 /*Social buttons styling ends here*/
+
+/* JQuery fullscreen slider */
+
+body {
+	background: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	margin: 0;
+	min-width: 320px;
+	padding: 0;
+}
+
+h1,
+h2,
+h3 {
+	margin: 0;
+	padding: 30px 0;
+}
+
+#allbtn {
+	background: transparent;
+	border: 1px solid #333;
+	border-radius: 5px;
+	color: #333;
+	cursor: pointer;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+#allbtnup {
+	background: transparent;
+	border: 1px solid #333;
+	border-radius: 5px;
+	color: #333;
+	cursor: pointer;
+	padding: 5px 10px;
+	float: left;
+	padding-bottom: 10px;
+}
+
+#allbtndown {
+	background: transparent;
+	border: 1px solid #333;
+	border-radius: 5px;
+	color: #333;
+	cursor: pointer;
+	padding: 5px 10px;
+	float: left;
+}
+
+#allbtnnav
+{
+	background: transparent;
+	border: 1px solid #25add8;
+	border-radius: 5px;
+	color: #25add8;
+	cursor: pointer;
+	padding: 5px 10px;
+	text-align: center;
+}
+
+.scroll-off {
+	overflow: hidden;
+}
+
+.scroll-on {
+	overflow: auto;
+}
+
+.page-frame {
+	margin: 0 auto;
+	max-width: 1024px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-align: center;
+}
+
+.page-frame h1
+{
+	color: #333;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.page-frame h3
+{
+	text-align: center;
+	font-size: 40px;
+	color: #333;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.learnbtn
+{
+	text-align: center;
+}
+
+.page-frame p
+{
+	font-size: 30px;
+	padding-bottom: 40px;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.demo-page-1,
+.demo-page-2,
+.demo-page-3 {
+	color: #fff;
+	
+}
+
+.demo-page-1 {
+	/*background-color: #00a75f;*/
+	background-color: #fff;
+	background-size: cover;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.demo-page-2 {
+	/*background-color: #A2BCF8;*/
+	background-color: #25add8;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.secsect
+{
+	padding-top: 50px;
+}
+
+.secsect span
+{
+	font-size: 30px;
+	color: #333;
+}
+#dirsym
+{
+	color: #333;
+	float: left;
+}
+
+.demo-page-3 {
+/*	background-color: #b6393b;*/
+	background-color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.demo-page-4
+{
+	background-color: #25add8; 
+}
+
+.carouselimg4
+{
+	background-size: 100% 100%;
+	-moz-background-size:100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+}
+
+.btnblue
+{
+	border-color: #25add8;
+	background-color: #25add8;
+}
+
+.btnblue div
+{
+
+	color: #fff;
+}
+/* JQuery fullscreen slider */

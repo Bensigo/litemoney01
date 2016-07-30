@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     'lmplatform',
     #third party app
     'contact_form',
-    'registration',
+    
 
 ]
 SITE_ID = 1
@@ -148,8 +148,6 @@ ADMINS = (
 MANAGERS = ADMINS
 
 
-#django-registration settingins
-ACCOUNT_ACTIVATION_DAYS = 1
-LOGIN_REDIRECT_URL = "profile"
+
 
 

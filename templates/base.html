@@ -6,9 +6,8 @@
   <title>
       {% block title %}{% endblock title %}
   </title>
-  <meta name="viewpoint" content="width=device-width , initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" content="#ffffff">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 {% block link %}{% endblock link %}
 
@@ -77,10 +76,6 @@
   <div class="pull-left">
     <ul class="quicklinks">
       <li><p>&copy; 2016 LiteMoney Inc</p><li>
-      <li><a href="#">Creators</a></li>
-      <li><a href="#">Affiliates</a></li>
-      <li><a href="{% url 'FQAs'%}">FAQ</a></li>
-      <li><a href="#">Privacy</a></li>
       <li><a href="#">Terms of Use</a></li>
       <li><a href="{% url 'news_list' %}">News</a></li>
       <li><a href="/contact/">Contact US</a></li>

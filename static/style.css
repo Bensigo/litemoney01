@@ -470,7 +470,7 @@ h3 {
 }
 
 .scroll-on {
-	overflow: auto;
+	overflow: scroll;
 }
 
 .page-frame {
@@ -478,6 +478,7 @@ h3 {
 	max-width: 1024px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-align: center;
+	overflow: scroll;
 }
 
 .page-frame h1

@@ -3,6 +3,16 @@
 {% block title %}
 	Welcome to Litemoney
  {% endblock title  %}
+ {% block link %}
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="{% static 'js/jquery.betterScroll.js' %}" type="text/javascript"></script>
+
+     <script type="text/javascript">
+  $(document).ready(function () {
+    $('#demo').betterScroll();
+  });
+  </script>
+ {% endblock %}
  {% block content %}
 <br>
 <br>
@@ -21,9 +31,7 @@
       </div>
       <div class="page-section demo-page-2">
         <div class="page-frame">
-          <p>
-            <button type="button" class="js-slide-up" id="appbtnup"><div id="dirsym" class="btnblue"><div>/\</div></div></button>
-          </p>
+          
         <div class="secsect">
         <div class="row">
           <div class="col-md-6">
@@ -35,16 +43,12 @@
           </div>
           </div>
         </div>
-          <p>
-            <button type="button" class="js-slide-down" ><div id="dirsym" class="btnblue"><div>\/</div></div></button>
-          </p>
+          
         </div>
       </div>
       <div class="page-section demo-page-3">
         <div class="page-frame">
-          <p>
-            <button type="button" class="js-slide-up" id="appbtnup"><div id="dirsym" style="background-color: #fff;">/\</div></button>
-          </p>
+          
           <div class="secsect">
         <div class="row">
           <div class="col-md-6">
@@ -56,16 +60,12 @@
           </div>
           </div>
         </div>
-          <p>
-            <button type="button" class="js-slide-down" ><div id="dirsym" style="background-color: #fff;">\/</div></button>
-          </p>
+          
         </div>
       </div>
       <div class="page-section demo-page-4">
         <div class="page-frame">
-          <p>
-            <button type="button" class="js-slide-up" id="appbtnup"><div id="dirsym" class="btnblue">/\</div></button>
-          </p>
+          
           <div class="secsect">
         <div class="row">
           <div class="col-md-6">

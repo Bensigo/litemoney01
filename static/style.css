@@ -521,6 +521,7 @@ h3 {
 	max-width: 1024px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	text-align: center;
+	overflow: scroll;
 
 }
 

@@ -11,6 +11,34 @@
 	opacity: 0.8;
 }
 
+
+/*Responsive nav add-on*/
+
+/* Remove margins and padding from the list, and add a black background color */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Float the list items side by side */
+
+/* Style the links inside the list items */
+ul.topnav li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of links on hover */
+
+/* Hide the list item that contains the link that should open and close the topnav on small screens */
+ul.topnav li.icon {display: none;}
+
+/*Responsive nav add-on*/
 /*.nav ul
 {
 
@@ -246,30 +274,7 @@
 	font-family: 'Open Sans Condensed', sans-serif;
 }
 
-/*This part handles the quicklinks in the footer*/
-.quicklinks
-{
-	padding-top: 12px;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
 
-.quicklinks li a
-{
-	padding-left: 20px;
-	color: #333;
-	text-decoration: none;
-	font-family: 'Open Sans Condensed', sans-serif;
-	font-size: 12px;
-
-}
-
-.quicklinks li
-{
-	list-style-type: none;
-	display: inline-block;
-	font-family: 'Open Sans Condensed', sans-serif;
-}
-/*This is where the quicklinks styling ends*/
 
 /*FAQ section styling is here*/
 .faqjumbo
@@ -380,6 +385,7 @@
 /*Footer section start here*/
 footer
 {
+	text-align: center;
 /*	background-color: #808080;*/
 	background: #fff;
 	box-shadow: 0 1px 6px rgba(0,0,0,0.35);
@@ -388,12 +394,13 @@ footer
 	bottom: 0;
 	position: fixed;
 	opacity: 0.8;
+	height: 90px;
 }
 /*Footer styling ends here*/
 
 /*Social buttons styling starts here*/
 
-.socialbuttons li
+.socialbuttons
 {
 	list-style-type: none;
 	display: inline;
@@ -406,6 +413,41 @@ footer
 	width: 25px;
 }
 /*Social buttons styling ends here*/
+
+/*This part handles the quicklinks in the footer*/
+.quicklinks
+{
+	padding-top: 12px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	text-decoration: none;
+}
+
+.quicklinks a
+{
+	padding-right: 20px;
+	color: #333;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 20px;
+
+}
+
+.quicklinks a:hover
+{
+	color: #333;
+	text-decoration: none;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.quicklinks
+{
+	text-decoration: none;
+	color: #333;
+	list-style-type: none;
+	display: inline-block;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+/*This is where the quicklinks styling ends*/
 
 /* JQuery fullscreen slider */
 

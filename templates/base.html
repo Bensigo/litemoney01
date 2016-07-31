@@ -47,15 +47,16 @@
 
 
 <!--Navigation Section Starts Here-->
-<div class="nav">
+<div class="nav" id="myTopNav">
 <div class="container"><!--Header Container starts here-->
     <ul class="pull-left">
-      <div class="header-logo"><a href="{% url 'home' %}"><img height="50px" src="{%static 'img/hlogo.png' %}"></a></div>
+      <div class="header-logo"><a href="{% url 'home' %}"><img height="40px" src="{%static 'img/hlogo.png' %}"></a></div>
     </ul>
-    <ul class="pull-right">
+    <ul class="topnav" id="myTopnav">
     <div class="header-links">
       <li><a href="{% url 'FQAs' %}">FAQ</a></li>
       <li><a href="#"><button id="allbtnnav">Coming Soon</button></a></li>
+      <li class="icon"><a href="javascript:void(0);" onclick="myFunction()">&#9776;</a></li>
     </div>
     </ul>
 </div><!-- Header Container ends here-->
@@ -73,28 +74,18 @@
 <footer>
 
 <div class="container">
-  <div class="pull-left">
-    <ul class="quicklinks">
-      <li><p>&copy; 2016 LiteMoney Inc</p><li>
-      <li><a href="#">Terms of Use</a></li>
-      <li><a href="{% url 'news_list' %}">News</a></li>
-      <li><a href="/contact/">Contact US</a></li>
-      <li><a href="{% url 'about' %}">About</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="container">
-  <div class="pull-right">
-  <ul class="socialbuttons">
-    <li><a href="#"><img src="{% static 'img/facebook.png' %}"></a></li>
-    <li><a href="twitter.com/LiteMoneyIO"><img src="{% static 'img/twitter.png' %}"></a></li>
-    <li><a href="instagram/LiteMoneyIO"><img src="{% static 'img/instagram.png' %}"></a></li>
-    <li><a href="#"><img src="{% static 'img/nigeria.jpg' %}"></a></li>
+  <ul>
+    <li class="quicklinks"><p>&copy; 2016 LiteMoney Inc</p></li>
+    <li class="quicklinks"><a href="#">Terms of Use</a></li>
+    <li class="quicklinks"><a href="{% url 'news_list' %}">News</a></li>
+    <li class="quicklinks"><a href="/contact/">Contact US</a></li>
+    <li class="quicklinks"><a href="{% url 'about' %}">About</a></li>
+    <li class="socialbuttons"><a href="#"><img src="{% static 'img/facebook.png' %}"></a></li>
+    <li class="socialbuttons"><a href="twitter.com/LiteMoneyIO"><img src="{% static 'img/twitter.png' %}"></a></li>
+    <li class="socialbuttons"><a href="instagram/LiteMoneyIO"><img src="{% static 'img/instagram.png' %}"></a></li>
+    <li class="socialbuttons"><a href="#"><img src="{% static 'img/nigeria.jpg' %}"></a></li>
   </ul>
-  </div>
 </div>
-
 </footer>
 <!--This part of the html page works on the footer-->
 
